@@ -1,7 +1,8 @@
-import React, { Component } from "react";
-import styles from "./styles.css";
+import React from "react";
 import { getData, getStoreData } from "../../Actions/index";
 import { connect } from "react-redux";
+
+import styles from "./Styles.module.css";
 
 function WeatherDataView(props) {
   const weather = `${Math.round(props.weather)}`;

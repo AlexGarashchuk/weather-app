@@ -1,15 +1,15 @@
 import React from "react";
 import {Switch, Route } from "react-router-dom";
-import styles from "./index.css";
 import WeatherData from "./Components/WeatherData";
 import Form from "./Components/Form";
 import CityList from "./Components/CityList";
 import DetailsPage from "./Components/WeatherDataDetails";
+import './index.css'
 
 function App() {
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.box}>
+    <div className="wrapper">
+      <div className="box">
         <h2>Sinoptik</h2>
         <Form />
         <CityList/>

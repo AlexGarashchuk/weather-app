@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import styles from "./styles.css";
 import { getStoreData } from "../../Actions";
+
+import styles from "./Styles.module.css";
 
 class CityListView extends Component {
   constructor(props) {

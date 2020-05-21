@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { getData, getStoreData } from "../../Actions";
-import styles from "./styles.css";
+import styles from './Styles.module.css'
 
 class ConnectedForm extends Component {
   constructor(props) {
@@ -39,7 +39,7 @@ class ConnectedForm extends Component {
             onChange={this.handleChange}
             className={styles.input}
           />
-          <button type="submit">SAVE</button>
+          <button className={styles.button} type="submit">SAVE</button>
         </div>
       </form>
     );
