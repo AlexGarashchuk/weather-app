@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {Switch, Route } from "react-router-dom";
+import styles from "./index.css";
+import WeatherData from "./Components/WeatherData";
+import Form from "./Components/Form";
+import CityList from "./Components/CityList";
+import DetailsPage from "./Components/WeatherDataDetails";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.wrapper}>
+      <div className={styles.box}>
+        <h2>Sinoptik</h2>
+        <Form />
+        <CityList/>
+        <Switch>
+          <Route path="/" exact  component={WeatherData}></Route>
+          <Route path="/Berlin" component={DetailsPage} />
+        </Switch>
+      </div>
     </div>
   );
 }
 
+ 
 export default App;

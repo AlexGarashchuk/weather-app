@@ -1,0 +1,16 @@
+.list{
+    display: flex;
+    padding: 5px 0;
+    box-sizing: border-box;
+}
+
+.item{
+    margin-right: 5px;
+    color:grey;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.item:hover{
+    color: rgb(38, 35, 35);;
+}
