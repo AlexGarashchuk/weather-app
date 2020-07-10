@@ -5,10 +5,6 @@ export const GET_DATA = "GET_DATA";
 
 export const API_KAY = `6627805f240aca84b4a726d2429a3208`;
 
-// export function addArticle(payload) {
-//   return { type: ADD_CITY, payload };
-// }
-
 export function getData(data) {
   return function (dispatch) {
     return fetch(
