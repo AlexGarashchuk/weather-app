@@ -20,6 +20,7 @@ class ConnectedForm extends Component {
     event.preventDefault();
     const { title } = this.state;
     if (!this.props.cityName.includes(title)) {
+      
       this.props.getData({ title });
     } else {
       this.props.getStoreData({ title });

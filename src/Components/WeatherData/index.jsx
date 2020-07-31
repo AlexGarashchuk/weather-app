@@ -1,17 +1,29 @@
 import React from "react";
 import { getData, getStoreData } from "../../Actions/index";
 import { connect } from "react-redux";
+import cx from "classnames";
 
 import styles from "./Styles.module.css";
 
 function WeatherDataView(props) {
-  const weather = `${Math.round(props.weather)}`;
+  debugger;
+  const {name, country, weather} = props
 
+  const weatherMath = `${Math.round(weather)}`;
   return (
     <div className={styles.list}>
-      <div className={styles.item}>{weather == 0 ? "" : `${weather}ºC`} </div>
-      <div className={styles.item}> {props.name}</div>
-      <div className={styles.item}> {props.country}</div>
+      {weather == 0 ? (
+        <div className={styles.list}>
+          <div className={cx(styles.item, styles.temp)}>
+            {weather == 0 ? "" : `${weatherMath}ºC`}{" "}
+          </div>
+          <div className={styles.item}>
+            {name},{country}
+          </div>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 }

@@ -1,10 +1,9 @@
 import React from "react";
-import {Switch, Route } from "react-router-dom";
 import WeatherData from "./Components/WeatherData";
 import Form from "./Components/Form";
 import CityList from "./Components/CityList";
-import DetailsPage from "./Components/WeatherDataDetails";
 import './index.css'
+import { CurrentPlace } from "./Components/CurrentPlace";
 
 function App() {
   return (
@@ -13,6 +12,7 @@ function App() {
         <h2>Sinoptik</h2>
         <Form />
         <CityList/>
+        <CurrentPlace />
         <WeatherData />
           {/* <Route path="/" exact  component={}></Route>
           <Route path="/Berlin" component={DetailsPage} /> */}
