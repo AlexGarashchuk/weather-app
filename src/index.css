@@ -24,12 +24,9 @@ div, input, button, a, h1, h2, h3, h4, h5, h6{
 }
 .box{
   width: 100%;
-  max-width: 500px;
   height: 100%;
-  border: 1px solid #b1d1ed;
   padding: 10px;
   box-sizing: border-box;
   border-radius: 5px;
   color: #a5b4b9;
-  box-shadow: 2px 2px 5px 5px #e3e8ee;
 }
