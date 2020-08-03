@@ -1,6 +1,6 @@
 
 
-## Initialise prject
+## Initialise project
 `npm i`
 
 run project
