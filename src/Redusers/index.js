@@ -7,14 +7,14 @@ const initialState = {
       name: [],
       country: [],
       weather: [],
-      visible: false
+      visible: false,
     },
     weatherData: {
       id: [],
       name: [],
       country: [],
       weather: [],
-      visible: true
+      visible: true,
     },
   },
 };
@@ -30,7 +30,7 @@ function rootReducer(state = initialState.data, action) {
           id: action.payload.id,
           weather: action.payload.main.temp,
           country: action.payload.sys.country,
-          visible: true
+          visible: true,
         },
         weatherData: {
           ...state.weatherData,
